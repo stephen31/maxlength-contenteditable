@@ -4,8 +4,20 @@
   "description": "Simple maxlength plugin validator for contenteditable html , this plugin do not allow you to put more than the specified max length allowed, paste from clipboard is also checked ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack --watch",
+    "build": "set NODE_ENV=production && webpack &",
+    "test": "karma start",
+    "report-coverage": "codecov"
   },
   "author": "Stephen31",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "webpack": "^3.10.0"
+  },
+  "dependencies": {}
 }
