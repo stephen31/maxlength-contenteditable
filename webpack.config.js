@@ -18,7 +18,11 @@ module.exports = {
       loader: 'babel-loader',
       options: {
         presets: [
-          'env',
+          ['env', {
+            targets: {
+              browsers: ['last 2 versions', 'ie >= 7'],
+            },
+          }],
         ],
       },
     }],
