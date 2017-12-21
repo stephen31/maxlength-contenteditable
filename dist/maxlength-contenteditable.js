@@ -3774,7 +3774,7 @@ function maxlengthContentEditable() {
      * @param {any} event
      */
   function generalEventKeyHandler(event) {
-    if (this.dataset.maxLength && this.textContent.length == this.dataset.maxLength && !isAllowedKeyCode(event.keyCode) && !event.ctrlKey) {
+    if (this.dataset.maxLength && this.textContent.length == this.dataset.maxLength && !isAllowedKeyCode(event)) {
       event.preventDefault();
     }
   }
@@ -3785,11 +3785,13 @@ function maxlengthContentEditable() {
    * 38: UpKey
    * 39: RightKey
    * 40: DownKey
+   * ctrlKey for control key
+   * metakey for command key on mac keyboard
    * @param {any} eventKeycode
    * @returns boolean
    */
-  function isAllowedKeyCode(key) {
-    return key === 8 || key === 38 || key === 39 || key === 37 || key === 40;
+  function isAllowedKeyCode(event) {
+    return event.keyCode === 8 || event.keyCode === 38 || event.keyCode === 39 || event.keyCode === 37 || event.keyCode === 40 || event.ctrlKey || event.metaKey;
   }
 } /*
    *   Copyright (C) 2017  Stephen BAROAN
