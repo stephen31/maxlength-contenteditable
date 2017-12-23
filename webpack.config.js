@@ -2,12 +2,12 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    'dist/maxlength-contenteditable': path.join(__dirname, '/src/maxlength-content-editable.js'),
+    'dist/maxlength-contenteditable': path.join(__dirname, '/src/maxlength-contenteditable.js'),
   },
   output: {
     path: path.resolve(__dirname),
     filename: '[name].js',
-    library: 'maxlengthContentEditable',
+    library: 'maxlengthContentEditableModule',
     libraryTarget: 'umd',
     umdNamedDefine: true,
   },

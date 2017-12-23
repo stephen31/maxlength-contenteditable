@@ -2,15 +2,36 @@
   "name": "maxlength-contenteditable",
   "version": "1.0.0",
   "description": "Simple maxlength plugin validator for contenteditable html , this plugin do not allow you to put more than the specified max length allowed, paste from clipboard is also checked ",
-  "main": "index.js",
+  "main": "dist/maxlength-contenteditable.js",
   "scripts": {
     "dev": "webpack --watch",
-    "build": "set NODE_ENV=production && webpack &",
-    "test": "karma start",
-    "report-coverage": "codecov"
+    "build": "webpack"
   },
+  "keywords": [
+    "contenteditable",
+    "maxlength",
+    "plugin",
+    "input",
+    "textarea",
+    "javascript",
+    "HTMLElement"
+  ],
+  "engines": {
+    "node": ">=7.8.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "unpkg": "dist/maxlength-contenteditable.js",
   "author": "Stephen31",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephen31/maxlength-contenteditable"
+  },
+  "bugs": {
+    "url": "https://github.com/stephen31/maxlength-contenteditable/issues"
+  },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
