@@ -23,7 +23,7 @@ $ yarn add maxlength-contenteditable --save
 ```html
 <script src="https://unpkg.com/maxlength-contenteditable@1.0.0/dist/maxlength-contenteditable.js"></script>
 ```
-###initialize
+### initialize
 
 ***you have 3 ways to do it*** :
 ### CommonJS
