@@ -2,11 +2,11 @@
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory();
 	else if(typeof define === 'function' && define.amd)
-		define("maxlengthContentEditable", [], factory);
+		define("maxlengthContentEditableModule", [], factory);
 	else if(typeof exports === 'object')
-		exports["maxlengthContentEditable"] = factory();
+		exports["maxlengthContentEditableModule"] = factory();
 	else
-		root["maxlengthContentEditable"] = factory();
+		root["maxlengthContentEditableModule"] = factory();
 })(typeof self !== 'undefined' ? self : this, function() {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache

@@ -1,2 +1,2 @@
 
-maxlengthContentEditable.maxlengthContentEditable();
+maxlengthContentEditableModule.maxlengthContentEditable();

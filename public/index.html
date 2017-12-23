@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=*, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=*, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
 </head>
+<style>
+  h2 {
+    color: lightslategray;
+  }
+  span {
+      color: red;
+  }
+
+  .content-editable-element {
+    border: 1px solid lightslategray;
+    width: 300px;
+  }
+</style>
+
 <body>
-    <div contenteditable="true" data-max-length="10"></div>
-    <script src="../dist/maxlength-contenteditable.js"></script>
-    <script src="script.js"></script>
+  <h2>maxlength contenteditable demo</h2>
+  <span>the max length is set to 10!!!!</span>
+  <div class="content-editable-element" contenteditable="true" data-max-length="10"></div>
+  <script src="../dist/maxlength-contenteditable.js"></script>
+  <script src="script.js"></script>
 
 </body>
+
 </html>

@@ -33,7 +33,7 @@ function maxlengthContentEditable() {
       plus the size of the text present in the clipboard exceeds exceeds the maxlength alowed
      * @param {any} event
      */
-  function clipboardEventHandler(event) {
+  function clipboardEventHandler(event) {    
     // IE
     if (window.clipboardData) {
       if (window.clipboardData.getData('Text').length + this.textContent.length > this.dataset.maxLength) {
@@ -54,7 +54,7 @@ function maxlengthContentEditable() {
       plus the size of the character typed exceeds the maxlength alowed
      * @param {any} event
      */
-  function generalEventKeyHandler(event) {
+  function generalEventKeyHandler(event) {    
     if (this.dataset.maxLength && this.textContent.length == this.dataset.maxLength &&
       !isAllowedKeyCode(event)
     ) {
