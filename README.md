@@ -21,7 +21,7 @@ $ yarn add maxlength-contenteditable --save
  You can also skip yarn/npm install by using repos on the cdn 
 
 ```html
-<script src="https://unpkg.com/maxlength-contenteditable@1.0.0/dist/maxlength-contenteditable.js"></script>
+<script src="https://unpkg.com/maxlength-contenteditable@1.0.1/dist/maxlength-contenteditable.js"></script>
 ```
 ## initialize
 

@@ -42,6 +42,6 @@
     "webpack": "^3.10.0"
   },
   "dependencies": {
-    "babel-polyfill": "^6.26.0"
+    "core-js": "^2.5.6"
   }
 }

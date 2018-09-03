@@ -9,7 +9,7 @@
  */
 /* eslint no-use-before-define:0 */
 
-import 'babel-polyfill';
+import 'core-js/fn/array/from';
 
 function maxlengthContentEditable() {
   const editableElements = document.querySelectorAll('div[contenteditable="true"]');
