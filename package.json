@@ -1,6 +1,6 @@
 {
   "name": "maxlength-contenteditable",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple maxlength plugin validator for contenteditable html , this plugin do not allow you to put more than the specified max length allowed, paste from clipboard is also checked ",
   "main": "dist/maxlength-contenteditable.js",
   "scripts": {
