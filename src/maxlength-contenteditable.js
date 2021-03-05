@@ -67,7 +67,8 @@ function maxlengthContentEditable() {
    * 37: LeftKey
    * 38: UpKey
    * 39: RightKey
-   * 40: DownKey
+   * 40: DownKey   
+   * 46: DeleteKey
    * ctrlKey for control key
    * metakey for command key on mac keyboard
    * @param {any} eventKeycode
@@ -78,7 +79,8 @@ function maxlengthContentEditable() {
       event.keyCode === 38 ||
       event.keyCode === 39 ||
       event.keyCode === 37 ||
-      event.keyCode === 40 ||
+      event.keyCode === 40 ||      
+      event.keyCode === 46 ||
       event.ctrlKey ||
       event.metaKey;
   }
